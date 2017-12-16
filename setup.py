@@ -31,7 +31,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'pydwm = bendwm:start',
+            'bendwm = bendwm:start',
         ]
     }
 )
