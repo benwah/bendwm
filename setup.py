@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 VERSION = '0.0.1'
@@ -10,10 +10,10 @@ setup(
     url='https://github.com/benwah/bendwm',
     author='Benoit C. Sirois',
     author_email='benoitcsirois@gmail.com',
-    version='0.0.1',
+    version='0.0.2',
     description=DESC,
     long_description=DESC,
-    packages=['bendwm'],
+    packages=find_packages(),
     license='MIT License',
     classifiers=[
         'Development Status :: 4 - Beta',
