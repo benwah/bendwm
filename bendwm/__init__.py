@@ -5,13 +5,13 @@ from time import sleep
 
 from pydwm import init_dwm
 
-from status_bar import start as status_bar_start
-from status_bar import cpu as status_cpu
-from status_bar import mem as status_mem
-from status_bar import wifi as status_wifi
-from status_bar import vol as status_vol
-from status_bar import battery as status_battery
-from status_bar import datetime as status_datetime
+from .status_bar import start as status_bar_start
+from .status_bar import cpu as status_cpu
+from .status_bar import mem as status_mem
+from .status_bar import wifi as status_wifi
+from .status_bar import vol as status_vol
+from .status_bar import battery as status_battery
+from .status_bar import datetime as status_datetime
 
 
 PROCESSES = {
@@ -77,6 +77,3 @@ def init_status_bar():
         },
     ]
     status_bar_start(conf)
-
-
-start()

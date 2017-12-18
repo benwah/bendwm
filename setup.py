@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 DESC = 'My DWM runner'
 
 
@@ -28,6 +28,7 @@ setup(
     ],
     install_requires=[
         'pydwm',
+        'psutil',
     ],
     entry_points={
         'console_scripts': [
